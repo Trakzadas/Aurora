@@ -168,8 +168,9 @@ nav.scrolled {
 .hero-title .highlight {
     background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
     -webkit-background-clip: text;
+    background-clip: text; /* Standard property for compatibility */
     -webkit-text-fill-color: transparent;
-}
+
 
 .hero-subtitle {
     font-size: clamp(1rem, 2.5vw, 1.4rem);
@@ -497,4 +498,5 @@ nav.scrolled {
     .content-section {
         padding: 6rem 5%;
     }
+}
 }
